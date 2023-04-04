@@ -15,6 +15,7 @@
         
         ## Events and Diseases
         
+        |--------------------|-------------------------------------------|----------------------------------------|----------------------------------|----------------------------------|--------------------------------|-------------------------------------|-----------------------|--------------------|
         | Event/Disease      | Time Period                               | Estimated Death Toll Range             | Lives Saved (per year) Range      | Lives Lost (per year) Range       | Total Societal Impact Range     | Economic Impact Range (2021 USD)     | Duration of Influence | Impact Score Range |
         |--------------------|-------------------------------------------|----------------------------------------|----------------------------------|----------------------------------|--------------------------------|-------------------------------------|-----------------------|--------------------|
         | WWI                | 1914-1919, consequences lasting decades   | 5-13 million (1)                       | 0                                | 0.5-2.5 million (1)              | -0.5 to -2.5 million (1)        | -$10.6 to -$31.9 trillion (11)        | 1914-present          | -0.75 to -0.50     |
@@ -22,18 +23,22 @@
         | Vaccines           | 1955-present, benefits accrued over 65+ years so far | N/A                                    | 1-2 million (annually, on average) (5) | 0                                | 1-2 million (annually, on average) (5) | $53.1-$212.4 billion (annually) (13) | 1955-present          | 0.75 to 1.00       |
         | COVID-19 pandemic  | 2019-present, lasting health and economic consequences | 10-25 million (as of 2021) (7)         | 0                                | 0.5-3 million (as of 2021) (7)   | -0.5 to -3 million (as of 2021) (7) | -$2.1 to -$8.5 trillion (as of 2021) (14) | 2019-present   | -0.50 to -0.25     |
         | COVID-19 vaccines  | 2020-present, benefits depend on distribution, uptake, duration of immunity | N/A                                    | 0.5-2 million (annual range, if 75-95% global coverage) (9) | 0 | 0.5-2 million (annual range, if 75-95% global coverage) (9) | $106.3-$318.9 billion (for 15-30 billion doses) (15) | 2020-present          | 0.50 to 0.75       |
-        
+        |--------------------|-------------------------------------------|----------------------------------------|----------------------------------|----------------------------------|--------------------------------|-------------------------------------|-----------------------|--------------------|
+
         ## Impact Scores
         
         The following table shows the average adjusted impact score and the redistributed impact score range for each event/disease.
         
-        | Event/Disease      | Average Adjusted Impact Score | Redistributed Impact Score Range |
-        |--------------------|--------------------------------|-------------------------------------|
+        |--------------------|---------------------------------|-------------------------------------|
+        | Event/Disease      | Average Adjusted Impact Score   | Redistributed Impact Score Range    |
+        |--------------------|---------------------------------|-------------------------------------|
         | WWI                | 42.5                            | -0.75 to -0.50                      |
         | WWII               | 22.5                            | -0.95 to -0.75                      |
         | Vaccines           | 82.5                            | 0.75 to 1.00                        |
-        | COVID-
-        
+        | COVID-19 pandemic  |      N/B                        | -0.50 to -0.25                      |
+        | COVID-19 vaccines  |      N/B                        | 0.50 to 0.75                        |
+        |--------------------|---------------------------------|-------------------------------------|
+
     # Event and Disease Impact Calculation
     ## To calculate the redistributed impact score range, we first take the average of the adjusted impact score range for each event/disease. Then, we create a binomial distribution with n=100 and p=0.5, which is a random distribution with equal probability of positive or negative outcomes. We use this distribution to redistribute the impact scores so that they are skewed towards -1 for negative events and towards +1 for positive events. This results in the redistributed impact score range for each event/disease.</p>
     <ol>
